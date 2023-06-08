@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+    dev:
+        build: .
+        volumes:
+            - ./target/Exodus:/usr/local/tomcat/webapps/ROOT
+        command: bash start.sh
+        ports:
+            - 8006:8080
+

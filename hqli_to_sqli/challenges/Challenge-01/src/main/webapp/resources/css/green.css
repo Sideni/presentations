@@ -1,0 +1,93 @@
+html {
+	color: #00FF00 !important;
+	font-family: 'Courier' !important;
+}
+.error {
+	color: #FF0000 !important;
+	text-align: center;
+}
+.table-div {
+	display: inline-block;
+}
+body {
+	background: black;
+	text-align: center;
+}
+h1 {
+	text-align: center;
+}
+a {
+	color: #00FF00;
+}
+input {
+	background-color: black;
+        color: #00FF00;	
+	border-color: #00FF00;
+	border-style: solid;
+	border-width: 1px;
+	font-family: 'Courier';
+	font-size: 14px;
+	padding: 2px 2px 0;
+}
+input:focus {
+	outline: none;
+}
+input[type='submit']:hover {
+	background-color: #00FF00;
+	color: black;
+}
+input[type='submit']:active {
+	background-color: #00BB00;
+	color: black;
+}
+table {
+	color : #00FF00;
+	border: none;
+	font-family: 'Courier';
+	font-size: 14px;
+	border-collapse: collapse;
+	margin: 0px auto;
+}
+td,th {
+	padding: 4px 3px 0;
+	text-align: left;
+	vertical-align: top;
+}
+tr,thead {
+	border-bottom: 1px solid #00FF00;
+}
+tr:last-child {
+	border-bottom: none;
+}
+.first {
+	min-width: 100px;
+}
+.second {
+	min-width: 250px;
+}
+.third {
+	min-width: 450px;
+	max-width: 850px;
+	word-wrap: break-word;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color: #00FF00;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: #00FF00;
+	opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: #00FF00;
+	opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #00FF00;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+	color: #00FF00;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+	color: #00FF00;
+}

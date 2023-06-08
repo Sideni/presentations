@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+    dev:
+        build: .
+        volumes:
+            - ./target/Challenge01:/usr/local/tomcat/webapps/ROOT
+        command: bash start.sh
+        ports:
+            - 8000:8080
+

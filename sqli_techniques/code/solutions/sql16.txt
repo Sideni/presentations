@@ -1,0 +1,18 @@
+
+SELECT POW (val,1) FROM (
+
+    SELECT AVG (c) val, AVG (c) FROM (
+        
+        SELECT u1-u2 as c FROM (
+            
+            SELECT UUID_SHORT ()u1, u2
+            FROM suchTable, 
+                (
+                    SELECT UUID_SHORT ()u2 
+                
+                )sub_alias1
+        )sub_alias2
+    )sub_alias3
+)sub_alias4
+
+(SELECT POW (val,1) FROM (SELECT AVG (c) val, AVG (c) FROM (SELECT u1-u2 as c FROM (SELECT UUID_SHORT ()u1, u2 FROM suchTable, (SELECT UUID_SHORT ()u2)sub_alias1)sub_alias2)sub_alias3)sub_alias4)

